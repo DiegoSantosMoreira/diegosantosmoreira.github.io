@@ -1,0 +1,86 @@
+.mainDiv{
+    top: 50%;
+    left: 40%;
+    position: absolute; 
+    transform: translate(-50%,-50%);
+}
+#range{
+    width: 250%;
+    height: 10px;
+    background-color: whitesmoke;
+    -webkit-appearance: none;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 12px;
+    box-shadow: 0px 1px 10px 1px black;
+   
+}
+#range::after{
+    content: '15';
+    font-size: 1rem;
+    top: 10%;
+    left: 250%;
+    position: absolute;
+}
+#range::before{
+    content: '3';
+    font-size: 1rem;
+    top: 10%;
+    left: 0%;
+    position: absolute;
+}
+#range:hover{
+    opacity: 1;
+   
+}
+#range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+    color: blue;
+}
+#p{
+    top:100%;
+    left: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    border-radius:25px;
+    width: 250%;
+    height: 45px;
+    color:whitesmoke;
+    text-align: right;
+    justify-content: center;
+}
+#pNumeroDigitos{
+    top:100%;
+    left: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius:25px;
+    width: 50%;
+    height: 45px;
+    color:whitesmoke;
+    text-align: right;
+    justify-content: center;
+}
+#label{
+    top:100%;
+    left: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 5px;
+}
